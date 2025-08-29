@@ -27,4 +27,5 @@ jobs:
         run: ant -noinput -buildfile PawParadise2/build.xml jar -Dbuild.generate.javadoc=false
 
       - name: Run application
-        run: java -jar dist/*.jar
+        run: java -jar PawParadise2/dist/*.jar
+
