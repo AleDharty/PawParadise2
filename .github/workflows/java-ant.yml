@@ -23,8 +23,8 @@ jobs:
       - name: Install Ant
         run: sudo apt-get update && sudo apt-get install -y ant
 
-      - name: Build with Ant
-        run: ant -noinput -buildfile PawParadise2/build.xml
+      - name: Build with Ant (sin javadoc)
+        run: ant -noinput -buildfile PawParadise2/build.xml jar -Dbuild.generate.javadoc=false
 
       - name: Run application
         run: java -jar dist/*.jar
